@@ -1,0 +1,43 @@
+<!-- Upper Header Bar start -->
+<div class="container-fluid bg-light" style="height: 60px; margin-top: 8px;">
+  <app-header-uper-bar></app-header-uper-bar>
+</div>
+
+
+<!-- Header start (Manu Bar is in Header Comopnent) -->
+<div class="container-fluid bg-dark sticky-top" style="height: 60px;">
+  <app-header></app-header>
+</div>
+
+<!-- This main div is for "Side NavBar, Home Page & Advertise" -->
+<div class="container bg-light" style="height: auto;">
+  <div class="row">
+
+
+    <!-- Side Nav Bar Start -->
+    <!-- <div class="col-md-2 bg-light " style="height: auto;"><br>
+      <app-nav-manu></app-nav-manu>
+    </div> -->
+
+
+    <!-- Main body part start -->
+    <div class="col-md-10">
+      <!-- <app-main-body></app-main-body> -->
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Advertise start -->
+    <div class="col-md-2 bg-light" style="height: auto;">
+      <app-advertise></app-advertise>
+    </div>
+
+  </div>
+</div>
+
+<br>
+<!-- Footer start-->
+<div class="container-fluid bg-dark text-white" style="height:auto; ">
+  <div class="container" style="text-align: center;">
+    <app-footer></app-footer>
+  </div>
+</div>

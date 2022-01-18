@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "Apple",
+      "category": "Fruits",
+      "id": 10
+    },
+    {
+      "name": "Mango",
+      "category": "Fruits",
+      "id": 11
+    },
+    {
+      "name": "Mango",
+      "category": "Fruits",
+      "id": 12
+    },
+    {
+      "name": "Mango",
+      "category": "Fruits",
+      "id": 13
+    }
+  ]
+}

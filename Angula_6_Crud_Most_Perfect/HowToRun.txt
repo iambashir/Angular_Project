@@ -1,0 +1,5 @@
+			Bashir Hossain
+------------------------------------------------------------------------------------------------
+1. Check npm installed or not, if not then install with this command : npm install
+2. Then run json server, to d this write command : json-server --watch src/assets/db.json --port 3000 
+     (Here folder name, file name and port number are predefined to the project )

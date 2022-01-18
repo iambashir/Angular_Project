@@ -1,0 +1,40 @@
+<div class="container bg-light">
+<p class="text-success">
+Add a new product
+</p>
+
+<!-- All the value of the form are in  "ngForm"  -->
+<form #productData = "ngForm" (ngSubmit) = "addProduct(productData.value)" class="">
+  <input type="text" name="name" ngModel/>
+  <br><br>
+  <input type="text"  name="category" ngModel/>
+  <br><br>
+  <input type="submit" value="Add" /> &nbsp;
+  <button (click) = "updateProduct(product)"> Update </button>&nbsp;
+  <input type="reset" value="Reset"/>
+
+</form><br>
+
+<table>
+
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Category</th>
+    </thead>
+
+    <tbody>
+      <!-- To set all the data in row use *ngFor loop following the rouls -->
+      <tr *ngFor = "let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
+        <td>
+          <button class="btn btn-success" (click) = "editProduct(product)">Edit</button>&nbsp;
+          <button class="btn btn-danger" (click) = "deleteProduct(product)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+
+</table>
+</div>

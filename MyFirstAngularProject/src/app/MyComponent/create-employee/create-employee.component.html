@@ -1,0 +1,21 @@
+<br/>
+<div class="container">
+  <h2>Person Details</h2>
+
+  <form [formGroup] = "employeeForm" (ngSubmit)="onSubmit()">
+   
+      <label for="fullName"> Full Name </label>
+      <input type="text" formControlName ="fullName"  id ="fullName" placeholder="Enter full name" class="form-control" >
+  
+  
+      <label for="email">Email</label>
+      <input type="text" formControlName = "email" id="email" placeholder="Enter email" class="form-control"><br>
+  
+    <button type="submit" class="btn btn-success"> Submit </button> &nbsp;&nbsp;
+    <button type="reset" class="btn btn-success"> Reset </button> 
+  </form>
+</div>
+
+<!-- import { ReactiveFormsModule } from '@angular/forms';  to app.module.ts-->
+
+

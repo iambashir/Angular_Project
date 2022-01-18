@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "5",
+      "name": "Mango",
+      "quantity": "80",
+      "price": "2000"
+    },
+    {
+      "id": "6",
+      "name": "Mango",
+      "quantity": "80",
+      "price": "2000"
+    },
+    {
+      "id": "9",
+      "name": "Nano",
+      "quantity": "5",
+      "price": "400.0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "firstName": "Raj",
+      "lastName": "Varma",
+      "contactNumber": 9845781256,
+      "code": "emp-001",
+      "address": "Pune",
+      "designation": "Devloper"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

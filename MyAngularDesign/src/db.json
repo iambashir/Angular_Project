@@ -1,0 +1,27 @@
+{
+  "user": [
+
+    {
+      "email": "nitin.rana@gmail.com",
+      "password": "2345678901"
+    },
+
+    {
+      "email": "rajat.singh1@gmail.com",
+      "password": "5637189302"
+    },
+
+    {
+      "email": "rahul.singh1@gmail.com",
+      "password": "5557189302"
+    },
+
+    {
+      "email": "shubham.singh@gmail.com",
+      "password": "7637189502"
+
+    }
+
+  ]
+}
+

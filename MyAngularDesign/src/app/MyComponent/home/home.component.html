@@ -1,0 +1,52 @@
+<div class="container"><br>
+  <h2> Login form </h2>
+  <form #userForm="ngForm" (ngSubmit)="userData(userForm.value)">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" [(ngModel)]="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="text" class="form-control" id="password" [(ngModel)]="password" placeholder="Enter password"
+        name="password">
+    </div>
+    <!-- <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div> -->
+    <button type="submit" value="submit" class="btn btn-primary">Submit</button> &nbsp;&nbsp;
+    <button type="reset" value="reset" class="btn btn-primary">Reset</button>
+  </form>
+
+</div>
+
+<div class="container"><br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let dt of userData"></tr>
+      <td>{{dt.email}}</td>
+      <td>{{dt.password}}</td>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- To Submit the form write  #userForm="ngForm" (ngSubmit)="userData(userForm.value)" to the form 
+  and set variable to input type then write the below data  into home.components.ts after ngOnInit() {
+  }
+  
+email :string;
+password: string;
+
+userData(value:any){
+// this.email = value.email;
+// this.password = value.password;
+
+alert(this.email + " " + this.password)
+} -->

@@ -1,0 +1,99 @@
+
+<div class="bg-light container" style="border-radius: 7px; width: 40%;">
+
+    <div style="text-align: center">
+        <h3> Product's CRUD Operation (Bashir Hossain - 1259855)</h3>
+        <h5 class="text-success"> Date 12 July 2021 </h5>
+    </div>
+
+
+<form #productData="ngForm" (ngSubmit)="addProduct(productData.value)" *ngIf="flag">
+    <div>
+        
+        <label for="id"> <b>Product ID :</b>  </label>
+        <input class="form-control" type="text" name="id" ngModel />
+        <br>
+        
+        <label for="name"> <b>Product Name :</b>  </label>
+        <input class="form-control" type="text" name="name" ngModel />
+        <br>
+
+        <label for="quantity"> <b>Product Quantity :</b> </label>
+        <input class="form-control" type="text" name="quantity" ngModel />
+        <br>
+
+        <label for="price"> <b>Product Price :</b>  </label>
+        <input class="form-control" type="text" name="price" ngModel />
+        <br>
+
+        <br>
+        <input class="btn btn-success" type="submit" value="Add" />&nbsp;&nbsp;
+        <input class="btn btn-info" type="reset" value="Reset" />
+    </div>
+
+</form><br>
+<form #updateProductData="ngForm" (ngSubmit)="updateProduct(updateProductData.value)" *ngIf="product && !flag">
+    <div>
+
+        <label for="id"> <b> Product ID :</b>  </label>
+        <input class="form-control" type="text" name="id" [ngModel]="product.id" />
+        <br>
+
+        <label for="name"> <b> Product Name :</b>  </label>
+        <input class="form-control" type="text" name="name" [ngModel]="product.name" />
+        <br>
+
+
+        <label for="quantity"> <b> Product Quantity :</b>  </label>
+        <input class="form-control" type="text" name="quantity" [ngModel]="product.quantity" />
+        <br>
+
+        <label for="price"> <b> Product Price :</b>  </label>
+        <input class="form-control" type="text" name="price" [ngModel]="product.price" />
+        <br>
+
+
+        <br>
+        <input class="btn btn-success" type="submit" value="Update" />&nbsp;&nbsp;
+        <input class="btn btn-info" type="reset" value="Reset" />
+    </div>
+</form><br>
+
+<div class="container">
+<table class="table table-hover table-bordered">
+    <thead>
+        <th>Pr. ID</th>
+        <th>Pr. Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+
+
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.price}}</td>
+
+            <td>
+                <button class="btn btn-success" (click)="editProduct(product)">Edit</button>&nbsp;
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="deleteProduct(product)">Delete</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div style="text-align: center;" >
+    <h3> {{massage}}  </h3><br>
+</div>
+
+<!-- <button class="btn btn-primary" (click)="emitMessege()">Emit</button> -->
+
+</div>
