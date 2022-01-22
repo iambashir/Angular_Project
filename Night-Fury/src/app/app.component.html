@@ -1,0 +1,32 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<br>
+
+<!-- ------------------- Header---------------------- -->
+<div class="navbar container">
+  <a routerLinkActive="Active" routerLink="home">Home</a>
+  <a routerLinkActive="Active" routerLink="about">About</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLinkActive="Active" routerLink="location">Location</a>
+      <a routerLinkActive="Active" routerLink="service">Service</a>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!-- --------------------Body---------------------- -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- ----------------------Footer------------------- -->
+<br>
+<footer class="container text-info">
+  Hello Bangladesh
+</footer>

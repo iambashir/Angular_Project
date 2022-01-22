@@ -1,52 +1,79 @@
-<div class="container"><br>
-  <h2> Login form </h2>
-  <form #userForm="ngForm" (ngSubmit)="userData(userForm.value)">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="text" class="form-control" id="email" [(ngModel)]="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="text" class="form-control" id="password" [(ngModel)]="password" placeholder="Enter password"
-        name="password">
-    </div>
-    <!-- <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div> -->
-    <button type="submit" value="submit" class="btn btn-primary">Submit</button> &nbsp;&nbsp;
-    <button type="reset" value="reset" class="btn btn-primary">Reset</button>
-  </form>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<br><br><br>
+<!-- partial:index.partial.html -->
+<div class="wrappers" style="height: 400px; width: 300px;">
+  <div class="containers">
+    <div class="top"></div>
+    <div class="bottom">
+      <div class="left">
+        <div class="details">
+          <h1>Chair</h1>
+          <p>£250</p>
+        </div>
+        <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+      </div>
+      <div class="right">
+        <div class="done"><i class="material-icons">done</i></div>
+        <div class="details">
+          <h1>Chair</h1>
+          <p>Added to your cart</p>
+        </div>
+        <div class="remove"><i class="material-icons">clear</i></div>
+      </div>
+    </div>
+  </div>
+  <div class="inside">
+    <div class="icon"><i class="material-icons">info_outline</i></div>
+    <div class="contents">
+      <table>
+        <tr>
+          <th>Width</th>
+          <th>Height</th>
+        </tr>
+        <tr>
+          <td>3000mm</td>
+          <td>4000mm</td>
+        </tr>
+        <tr>
+          <th>Something</th>
+          <th>Something</th>
+        </tr>
+        <tr>
+          <td>200mm</td>
+          <td>200mm</td>
+        </tr>
+        <tr>
+          <th>Something</th>
+          <th>Something</th>
+        </tr>
+        <tr>
+          <td>200mm</td>
+          <td>200mm</td>
+        </tr>
+        <tr>
+          <th>Something</th>
+          <th>Something</th>
+        </tr>
+        <tr>
+          <td>200mm</td>
+          <td>200mm</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </div>
 
-<div class="container"><br>
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th>Email</th>
-        <th>Password</th>
-      </tr>
-    </thead>
 
-    <tbody>
-      <tr *ngFor="let dt of userData"></tr>
-      <td>{{dt.email}}</td>
-      <td>{{dt.password}}</td>
-    </tbody>
-  </table>
-</div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
+<script>
+  $('.buy').click(function () {
+    $('.bottom').addClass("clicked");
+  });
 
-<!-- To Submit the form write  #userForm="ngForm" (ngSubmit)="userData(userForm.value)" to the form 
-  and set variable to input type then write the below data  into home.components.ts after ngOnInit() {
-  }
-  
-email :string;
-password: string;
-
-userData(value:any){
-// this.email = value.email;
-// this.password = value.password;
-
-alert(this.email + " " + this.password)
-} -->
+  $('.remove').click(function () {
+    $('.bottom').removeClass("clicked");
+  });
+</script>

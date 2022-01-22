@@ -20,11 +20,10 @@ export interface Profile {
 })
 export class ProfileComponent implements OnInit, OnDestroy {
 
-  subs = new SubSink();
-  listProfile: Profile[] = [];
+  subs = new SubSink(); 
+  listProfile: Profile[] = []; 
   profileForm!: FormGroup;
   selectedFile: any = null;
-
 
   constructor(private profileService: ProfileService, private formBuilder: FormBuilder) { }
 
@@ -40,20 +39,20 @@ export class ProfileComponent implements OnInit, OnDestroy {
       imagePath: ['']
     })
 
-    this.subs.add(this.profileService.getAllProfiles().subscribe((res) => {
+    this.subs.add(this.profileService.getAllProfiles().subscribe( (res) => {
       this.listProfile = res;
       console.log(res);
     },
-      (err) => {
-        console.log(err);
-      }))
+    (err) => {
+      console.log(err);
+    }))
 
   }
 
   public saveImage(event: any): void {
     console.log(event);
     this.selectedFile = event;
-    this.profileForm.get('imagePath')?.setValue(this.selectedFile.target.files[0].name);
+    this.profileForm.get('imagePath')?.setValue(this.selectedFile.target.files[0].name);    
   }
 
   public saveProfile(): void {
@@ -63,9 +62,9 @@ export class ProfileComponent implements OnInit, OnDestroy {
     this.subs.add(this.profileService.saveImage(file, usercode).subscribe((res) => {
       console.log('image uploaded...');
     },
-      (err) => {
-        console.log(err);
-      }))
+    (err) => {
+      console.log(err);
+    }))
 
     var str = new String(this.profileForm.get('imagePath')?.value);
     var index = str.lastIndexOf('.');
@@ -75,30 +74,22 @@ export class ProfileComponent implements OnInit, OnDestroy {
     //Null the selectedFile for safty (may needed while updating)
     this.selectedFile = null;
 
-    this.subs.add(this.profileService.saveUserProfile(this.profileForm.value).subscribe((res) => {
+    this.subs.add(this.profileService.saveUserProfile(this.profileForm.value).subscribe( (res) => {
       alert("data saved successfully");
-      this.listProfile.push(this.profileForm.value);
       this.profileForm.reset();
     },
-      (err) => {
-        console.log(err);
-      }))
+    (err) => {
+      console.log(err);
+    }))
   }
-  // 5 - 1
-  // profile => splice(i, 1)
+
   deleteProfile(id: number): void {
     this.subs.add(this.profileService.deleteprofile(id).subscribe((res) => {
-      for (var i = 0; i < this.listProfile.length; i++) {
-        if (this.listProfile[i].id == id) {
-          this.listProfile.splice(i, 1);
-          break;
-        }
-      }
       alert("profile deleted");
     },
-      (err) => {
-        console.log("problem in deleting profile...");
-      }))
+    (err) => {
+      console.log("problem in deleting profile...");
+    }))
   }
 
   public editProfile(profile: Profile): void {
