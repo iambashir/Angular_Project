@@ -13,6 +13,7 @@ import { HeaderUperBarComponent } from './MyComponent/header-uper-bar/header-upe
 import { HomeComponent } from './MyComponent/home/home.component';
 import { ContactComponent } from './MyComponent/contact/contact.component';
 import { OrderComponent } from './Mycomponent/order/order.component';
+import { ServicesComponent } from './MyComponent/services/services.component';
 // import { AppRoutingModule } from './AppRoutingModule/app-routing.module';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { OrderComponent } from './Mycomponent/order/order.component';
     HomeComponent,
     ContactComponent,
     OrderComponent,
+    ServicesComponent,
     
   ],
   imports: [
