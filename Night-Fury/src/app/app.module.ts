@@ -15,6 +15,7 @@ import { ContactComponent } from './MyComponent/contact/contact.component';
 import { CareerComponent } from './MyComponent/career/career.component';
 import { Pages1Component } from './MyComponent/pages1/pages1.component';
 import { Pages2Component } from './MyComponent/pages2/pages2.component';
+import { ManuComponent } from './MyComponent/manu/manu.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Pages2Component } from './MyComponent/pages2/pages2.component';
     ContactComponent,
     CareerComponent,
     Pages1Component,
-    Pages2Component
+    Pages2Component,
+    ManuComponent
   ],
   imports: [
     BrowserModule, RouterModule, AppRoutingModule
