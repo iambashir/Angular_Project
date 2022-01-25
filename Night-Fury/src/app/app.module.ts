@@ -18,6 +18,7 @@ import { Pages2Component } from './MyComponent/pages2/pages2.component';
 import { ManuComponent } from './MyComponent/manu/manu.component';
 import { FooterComponent } from './MyComponent/footer/footer.component';
 import { HeaderComponent } from './MyComponent/header/header.component';
+import { Pages3Component } from './MyComponent/pages3/pages3.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HeaderComponent } from './MyComponent/header/header.component';
     Pages2Component,
     ManuComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    Pages3Component
   ],
   imports: [
     BrowserModule, RouterModule, AppRoutingModule
