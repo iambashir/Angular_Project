@@ -1,18 +1,26 @@
+<!-- ------------------ Header ------------------- -->
+<div>
+  <app-header></app-header>
+</div>
+
+
 <!-- ------------------Nav Manu------------------- -->
-<div class="container">
-  <app-manu></app-manu>
+<div style="background-color: #d9dedf;" class="sticky-top">
+  <div class="container">
+      <app-manu></app-manu>
+  </div>
 </div>
 
 
 <!-- --------------------Body---------------------- -->
 <br><br>
-<div class="container">
+<div class="container" style="height: 100vh;">
   <router-outlet></router-outlet>
 </div>
 
 
 <!-- ----------------------Footer------------------- -->
 <br>
-<footer class="container text-info">
-  Hello Bangladesh
-</footer>
+<div class="">
+  <app-footer></app-footer>
+</div>

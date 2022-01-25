@@ -16,6 +16,8 @@ import { CareerComponent } from './MyComponent/career/career.component';
 import { Pages1Component } from './MyComponent/pages1/pages1.component';
 import { Pages2Component } from './MyComponent/pages2/pages2.component';
 import { ManuComponent } from './MyComponent/manu/manu.component';
+import { FooterComponent } from './MyComponent/footer/footer.component';
+import { HeaderComponent } from './MyComponent/header/header.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ManuComponent } from './MyComponent/manu/manu.component';
     CareerComponent,
     Pages1Component,
     Pages2Component,
-    ManuComponent
+    ManuComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, RouterModule, AppRoutingModule

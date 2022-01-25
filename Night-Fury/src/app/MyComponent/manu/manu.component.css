@@ -1,3 +1,5 @@
+ 
+ 
  #div-main .main-nav {
 
 
@@ -22,9 +24,10 @@
         }
 
         a.onChange:hover {
-            color: #f0e9e9 !important;
+            color: #f3e9e9 !important;
             background: #024983;
             opacity: 1;
+            transition: 0.5s;
         }
 
         /* .navbar-nav li.active {
@@ -35,6 +38,7 @@
             color: black !important;
             font: size 20px;
             font-weight: bold;
+            
         }
 
         a:focus {
@@ -43,11 +47,15 @@
 
         .navbar-nav li:hover>ul.dropdown-menu {
             display: block;
+            
+            
 
         }
 
         .dropdown-submenu {
             position: relative;
+            
+            
 
         }
 
@@ -55,6 +63,7 @@
             top: 0;
             left: 100%;
             margin-top: -6px;
+            
         }
 
         /* rotate caret on hover */
@@ -63,6 +72,21 @@
             transform: rotate(-90deg);
             transition: 0.5s;
         }
+        
+        
+        /* ul {
+            transition: all 2s;
+            transition-duration: 2s;
+        }
+
+
+        ul.dropdown-menu {
+    
+            
+            transition-duration: 2s;
+            transition: all 2s;
+        } */
+
 
         /* ====================== For Mobile Responsive ===================== */
         @media only screen and (max-width: 700px) {
@@ -70,7 +94,7 @@
                 background-color: #cadee2;
                 height: 40px;
 
-                display: flex;
+                /* display: flex; */
                 justify-content: left;
                 /* align horizontal */
                 align-items: center;
@@ -80,22 +104,22 @@
             }
 
             a.onChange:hover {
-                color: #f0e9e9 !important;
-                background: #024983;
+                color: #7e0808 !important;
+                background: #dfdad8;
                 opacity: 1;
                 transition: 0.4s;
-                padding: 5px;
+                /* padding: 5px; */
                 border-radius: 3px;
                 width: 200px;
-                height: 45px;
+                /* height: 45px; */
             }
 
             .navbar-nav li.active {
-                background: #5e8aad;
-                padding: 5px;
-                border-radius: 3px;
+                /* background: #5e8aad; */
+                /* padding: 5px; */
+                /* border-radius: 3px; */
                 width: 200px;
-                color: #f0e9e9 !important;
+                color: #800505 !important;
 
             }
 
@@ -106,7 +130,7 @@
             }
 
             a:focus {
-                color: #fcfafa !important;
+                color: #8a0707 !important;
             }
 
             .navbar-nav li:hover>ul.dropdown-menu {
@@ -133,13 +157,15 @@
             }
 
             .div1 {
-                padding-bottom: 15px;
+                padding-bottom: 10px;
+                
 
             }
 
             .div2 {
                 margin: 0 auto;
-
+                background-color: #f7f7f7;
+                border-radius: 5px;
             }
 
         }
