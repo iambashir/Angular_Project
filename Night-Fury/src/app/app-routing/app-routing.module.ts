@@ -5,6 +5,7 @@ import { HomeComponent } from '../MyComponent/home/home.component';
 import { AboutComponent } from '../MyComponent/about/about.component';
 import { LocationComponent } from '../MyComponent/location/location.component';
 import { ServiceComponent } from '../MyComponent/service/service.component';
+import { BlogComponent } from '../MyComponent/blog/blog.component';
 
 
 const appRouts: Routes = [
@@ -12,6 +13,7 @@ const appRouts: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'location', component: LocationComponent },
   { path: 'service', component: ServiceComponent },
+  { path: 'blog', component: BlogComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 
 ];
