@@ -19,6 +19,10 @@ import { ManuComponent } from './MyComponent/manu/manu.component';
 import { FooterComponent } from './MyComponent/footer/footer.component';
 import { HeaderComponent } from './MyComponent/header/header.component';
 import { Pages3Component } from './MyComponent/pages3/pages3.component';
+import { GalleryComponent } from './MyComponent/gallery/gallery.component';
+import { Service2Component } from './MyComponent/service2/service2.component';
+import { Service3Component } from './MyComponent/service3/service3.component';
+import { Gallery2Component } from './MyComponent/gallery2/gallery2.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { Pages3Component } from './MyComponent/pages3/pages3.component';
     ManuComponent,
     FooterComponent,
     HeaderComponent,
-    Pages3Component
+    Pages3Component,
+    GalleryComponent,
+    Service2Component,
+    Service3Component,
+    Gallery2Component
   ],
   imports: [
     BrowserModule, RouterModule, AppRoutingModule

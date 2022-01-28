@@ -2,30 +2,33 @@
  
  #div-main .main-nav {
 
-
-            background-color: #d9dedf;
-            height: 40px;
+            
+            background-color: #038099;
+            height: 60px;
             padding: 2px;
             /* align-content: center; */
 
         }
 
         .div1 {
-            align-items: center;
+            align-items: left;
         }
 
         .div2 {
             margin: 0 auto;
-            justify-content: center;
+            text-align: right;
+            justify-content: right;
             /* align horizontal */
-            align-items: center;
+            align-items: right;
             /* align vertical */
 
         }
 
         a.onChange:hover {
-            color: #f3e9e9 !important;
-            background: #024983;
+            /* margin: 0 auto; */
+            color: #f2f3f2 !important;
+            background: #118aec;
+            /* height: 60px; */
             opacity: 1;
             transition: 0.5s;
         }
@@ -35,10 +38,18 @@
         } */
 
         a {
-            color: black !important;
+            color: #fcf5f5 !important;
             font: size 20px;
             font-weight: bold;
             
+        }
+
+        .dropdown-menu{
+            background-color: #097099;
+        }
+
+        .dropdown-item:hover{
+            background-color: #08a708;
         }
 
         a:focus {

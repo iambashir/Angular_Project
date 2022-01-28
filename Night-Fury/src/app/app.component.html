@@ -1,26 +1,22 @@
 <!-- ------------------ Header ------------------- -->
-<div>
+<div class="main-app">
   <app-header></app-header>
 </div>
 
 
 <!-- ------------------Nav Manu------------------- -->
-<div style="background-color: #d9dedf;" class="sticky-top">
-  <div class="container">
-      <app-manu></app-manu>
-  </div>
+<div style="background-color: #038099;" class="sticky-top">
+  <app-manu></app-manu>
 </div>
 
 
 <!-- --------------------Body---------------------- -->
-<br><br>
-<div class="container" style="height: 100vh;">
+<div class="main-app" style="min-height: 800px;">
   <router-outlet></router-outlet>
 </div>
 
 
 <!-- ----------------------Footer------------------- -->
-<br>
-<div class="">
+<div class="main-app">
   <app-footer></app-footer>
 </div>

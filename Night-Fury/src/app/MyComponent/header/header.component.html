@@ -1,7 +1,60 @@
-<div style="text-align: center;">
-    <h2>
-        Hello Bangladesh
-    </h2>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;">
+    <div class="row justify-content-between">
+        <div class="col-md-8 order-md-last">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <a class="navbar-brand" href="index.html">Logistica <span>Architecture Agency</span></a>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+                    <form action="#" class="searchform order-lg-last">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control pl-3" placeholder="Search">
+                            <button type="submit" placeholder="" class="form-control search"><span
+                                    class="fa fa-search"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="social-media">
+                <p class="mb-0 d-flex">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i
+                                class="sr-only">Facebook</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i
+                                class="sr-only">Twitter</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span
+                            class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i
+                                class="sr-only">Dribbble</i></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 
+<script>
+    (function ($) {
 
+        "use strict";
+
+        $('nav .dropdown').hover(function () {
+            var $this = $(this);
+            $this.addClass('show');
+            $this.find('> a').attr('aria-expanded', true);
+            $this.find('.dropdown-menu').addClass('show');
+        }, function () {
+            var $this = $(this);
+            $this.removeClass('show');
+            $this.find('> a').attr('aria-expanded', false);
+            $this.find('.dropdown-menu').removeClass('show');
+        });
+
+    })(jQuery);
+
+</script>

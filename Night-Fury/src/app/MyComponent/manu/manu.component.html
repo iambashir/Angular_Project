@@ -57,27 +57,45 @@
 
 <div id="div-main">
 
-    <nav  class="navbar navbar-expand-md navbar-light rounded main-nav ">
+    <nav class="navbar navbar-expand-md navbar-light rounded main-nav container">
 
-        <div class="div1">
+        <div class="div1 ">
 
 
             <a class="navbar-brand font-weight-bold " style="float: right;" href="#"> &nbsp;&nbsp; Night Fury</a>
-           &nbsp; <button
-                class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            &nbsp; <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="width: 15px; height: 15px;"></span>
-            </button> 
+            </button>
         </div>
 
 
+
         <div class="collapse navbar-collapse div2" id="navbarNavDropdown">
+
             <ul class="navbar-nav list-inline">
-                <li class="nav-item active">
+
+
+                <!-- <li class="nav-item active">
                     <a class="nav-link font-weight-bold onChange" routerLinkActive="Active" routerLink="home">Home <span
                             class="sr-only">(current)</span></a>
+                </li> -->
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle onChange" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> Home <span class="sr-only">(current)</span> </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" routerLinkActive="Active" routerLink="home">Home1</a></li>
+                        <li><a class="dropdown-item" routerLink="home2"> Home2 </a></li>
+                        <li><a class="dropdown-item" routerLink="home3"> Home3 </a></li>
+                    </ul>
                 </li>
 
+
+                <li class="nav-item">
+                    <a class="nav-link onChange" routerLinkActive="Active" routerLink="blog">Blog</a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link onChange" routerLinkActive="Active" routerLink="about">About</a>
@@ -86,29 +104,24 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle onChange" id="navbarDropdownMenuLink" data-toggle="dropdown "
-                        aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                        aria-haspopup="true" aria-expanded="false"> Pages </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" routerLink="service">Service</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
-                                href="http://google.com">Google</a>
+                        <li><a class="dropdown-item" routerLink="pages1">Page1</a></li>
+                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Sub Page</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                <li><a class="dropdown-item" href="#">Submenu0</a></li>
-                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu
-                                        1</a>
+                                <li><a class="dropdown-item" routerLink="pages2">Page2</a></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">Sub
+                                        Page</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                        <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                        <li><a class="dropdown-item" routerLink="pages3">Page3</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
-                                        href="#">Submenu2</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                        <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                    </ul>
-                                </li>
+                                <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Sub
+                                                Page</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Page4</a></li>
+                                            </ul>
+                                        </li> -->
                             </ul>
                         </li>
                     </ul>
@@ -116,32 +129,30 @@
 
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle onChange" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown2 </a>
+                    <a class="nav-link dropdown-toggle onChange" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> service </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Action Manager</a></li>
+                        <li><a class="dropdown-item" routerLink="service">Service1</a></li>
+                        <li><a class="dropdown-item" routerLink="service2">Service2</a></li>
+                        <li><a class="dropdown-item" routerLink="service3">Service3</a></li>
                     </ul>
                 </li>
 
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle onChange" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown3 </a>
+                    <a class="nav-link dropdown-toggle onChange" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> Gallery </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
-                                href="#">Google</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                <li><a class="dropdown-item" href="#">Submenu0</a></li>
-                            </ul>
-                        </li>
+                        <li><a class="dropdown-item" routerLink="gallery">Gallery1</a></li>
+                        <li><a class="dropdown-item" routerLink="gallery2">Gallery2</a></li>
+
                     </ul>
                 </li>
 
+
+                <li class="nav-item">
+                    <a class="nav-link onChange" routerLinkActive="Active" routerLink="contact">Contact</a>
+                </li>
 
 
 
