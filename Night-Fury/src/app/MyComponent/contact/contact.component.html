@@ -1,1 +1,164 @@
-<p>&nbsp; &nbsp;contact works!</p>
+<!--------------------- Contact Title ---------------------->
+<div class="contact py-sm-2 py-1">
+    <div class="container py-xl-4 py-lg-2">
+        <!-- tittle heading -->
+        <h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+            <span>C</span>ontact
+            <span>U</span>s
+            <hr>
+        </h3>
+        <!------------------------------------Title heading //----------------------------------------->
+
+
+
+        <div class="row contact-grids agile-1 mb-5">
+            <div class="col-sm-4 contact-grid agileinfo-6 mt-sm-0 mt-2">
+                <div class="contact-grid1 text-center">
+                    <div class="con-ic">
+                        <i class="fas fa-map-marker-alt rounded-circle"></i>
+                    </div>
+                    <h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
+                    <p style="font-weight: bold;color:black;">E-Royal Mart
+                        <label style="font-weight: bold;color:black;">Shop No.50, Level-4, Bashundhara City, Panthapath,
+                            Dhaka</label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4 contact-grid agileinfo-6 my-sm-0 my-4">
+                <div class="contact-grid1 text-center">
+                    <div class="con-ic">
+                        <i class="fas fa-phone rounded-circle"></i>
+                    </div>
+                    <h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Our Hotline</h4>
+                    <p style="font-weight: bold;color:black;"><a style="font-weight: bold;color:black;"
+                            href="tel:+88 01748957005"> +88 01748957005 <br>+88 01935692811</a>
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 contact-grid agileinfo-6">
+                <div class="contact-grid1 text-center">
+                    <div class="con-ic">
+                        <i class="fas fa-envelope-open rounded-circle"></i>
+                    </div>
+                    <h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
+                    <p>
+                        <a style="font-weight: bold;color:black;"
+                            href="mailto:javahub018@gmail.com">bashir.rasulpur@gmail.com <br> bashir.rpur@yahoo.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------- form  Start -------------------------------->
+        <form id="form" method="post">
+            <div class="contact-grids1 w3agile-6">
+                <div class="row">
+
+
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>Name: </b></label>
+                        <input type="text" class="form-control rounded" placeholder="Name" disabled="disabled" value=""
+                            name="name" id="name" required="required">
+                        <p class="error" id="error_name"></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>E-mail: </b></label>
+                        <input type="email" class="form-control rounded" placeholder="Email" disabled="disabled"
+                            value="" name="email" id="email" required="required">
+                        <p class="error" id="error_email"></p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>Name: </b></label>
+                        <input type="text" class="form-control rounded" placeholder="Name" name="name" id="name"
+                            required="required">
+                        <p class="error" id="error_name"></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>E-mail: </b></label>
+                        <input type="email" class="form-control rounded" placeholder="Email" name="email" id="email"
+                            required="required">
+                        <p class="error" id="error_email"></p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>Subject: </b></label>
+                        <input type="text" class="form-control rounded" placeholder="Subject" name="subject"
+                            id="subject" required="required">
+                        <p class="error" id="error_subject"></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 contact-form1 form-group">
+                        <label class="col-form-label"><b>Message: </b></label>
+                        <textarea name="message" class="form-control rounded" placeholder="Message" cols="45" rows="1"
+                            id="message" required="required"></textarea>
+                        <p class="error" id="error_message"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center row text-center">
+                <div class="col-md-6">
+                    <input type="submit" class="btn btn-info form-control rounded" id="submit" value="Send Messege"
+                        onclick="showThanks()">
+                </div>
+                <div class="col-md-6">
+                    <input type="reset" class="btn btn-success form-control rounded" id="submit" value="Reset">
+                </div>
+
+            </div>
+        </form>
+        <!-------------------------------- form  Start/-------------------------------->
+        <br>
+        <!----------- Sending Email loading process	 ------------->
+        <!-- <div>
+            <div id="success" style="color: green;font-weight: bold;font-size: 15px;"></div>
+            <div id="error" style="color: green;font-weight: bold;font-size: 15px;"></div>
+            <img src="${pageContext.request.contextPath}/images/loader.gif" alt="loader"
+                style="width: 150px;height: 120px;" id="loader">
+    </div>  -->
+
+        <!-- <div id="thanks" class="text-success text-center" style="display:none;">
+        <h3>Thanks for staying with us</h3>
+    </div> -->
+
+    </div>
+</div>
+
+<!-- //contact -->
+<!---728x90--->
+<!-- map -->
+<div class="bg-light" style="height:35px;">
+    <h4 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-4">
+        <span>Our Location at Google Map</span>
+    </h4>
+</div>
+<div class="map mt-sm-0 mt-4">
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%;height=400&amp;hl=en&amp;q=bosundhara city, dhaka&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://www.fnfgo.com/">FNF Mods</a></div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+            }
+
+            .gmap_iframe {
+                width: 100% !important;
+                height: 400px !important;
+            }
+        </style>
+    </div>
+</div>
