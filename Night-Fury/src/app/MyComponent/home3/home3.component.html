@@ -1,31 +1,11 @@
-<style>
-    body {
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-        height: 600px;
-    }
-
-    canvas {
-        padding: 0;
-        margin: 0;
-    }
-
-    div.btnbg {
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
-</style>
+<div class="main-div">
 
 
-
-<body>
 
     <canvas id="sakura"></canvas>
     <div class="btnbg">
     </div>
-
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <!-- sakura shader -->
     <script id="sakura_point_vsh" type="x-shader/x_vertex">
       uniform mat4 uProjection;
@@ -1119,7 +1099,4 @@
             w['r' + r] = w['r' + r] || w['webkitR' + r] || w['mozR' + r] || w['msR' + r] || w['oR' + r] || function (c) { w.setTimeout(c, 1000 / 60); };
         })(window, 'equestAnimationFrame');
     </script>
-
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-</body>
+</div>
