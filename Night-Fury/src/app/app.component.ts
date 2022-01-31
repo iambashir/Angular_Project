@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+
+// This is testing purpose code
+declare const myFun: any;
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +13,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Night-Fury';
+
+
+  // This is testing purpose code
+  callfun() {
+    myFun();
+  }
+
+
+
+
 }
