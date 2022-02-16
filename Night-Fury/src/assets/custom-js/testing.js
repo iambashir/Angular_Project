@@ -1,8 +1,8 @@
 
-function myFun() {
-    window.alert("Hello Bangladesh");
-}
+// function myFun() {
+//     window.alert("Hello Bangladesh");
+// }
 
-$(function () {
-    alert("Hello");
-})
+// $(function () {
+//     alert("Hello");
+// })

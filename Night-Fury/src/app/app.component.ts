@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 // This is testing purpose code
-declare const myFun: any;
+// declare const myFun: any;
 
 
 
@@ -16,9 +16,9 @@ export class AppComponent {
 
 
   // This is testing purpose code
-  callfun() {
-    myFun();
-  }
+  // callfun() {
+  //   myFun();
+  // }
 
 
 

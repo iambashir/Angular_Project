@@ -1,0 +1,198 @@
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" /> -->
+
+<!-- 1st footer -->
+<footer>
+    <div class="footer-top-first bg-dark">
+        <div class="container py-md-5 py-sm-4 py-3">
+            <!-- footer second section -->
+            <div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
+                <div class="col-md-4 offer-footer">
+                    <div class="row">
+                        <div class="col-4 icon-fot">
+                            <i class="fas fa-dolly"></i>
+                        </div>
+                        <div class="col-8 text-form-footer ">
+                            <h3 class="text-white">Free Shipping</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 offer-footer my-md-0 my-4">
+                    <div class="row">
+                        <div class="col-4 icon-fot">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="col-8 text-form-footer">
+                            <h3 class="text-white">Fast Delivery</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 offer-footer">
+                    <div class="row">
+                        <div class="col-4 icon-fot">
+                            <i class="far fa-thumbs-up"></i>
+                        </div>
+                        <div class="col-8 text-form-footer">
+                            <h3 class="text-white">Huge Saving</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- //footer -->
+
+
+<!-- copyright -->
+
+<!-- 2nd Footer start -->
+<div class="text-center text-light bg-dark">
+    <div class="container-fluid text-center text-md-center"><br>
+        <div class="row">
+
+            <!-- Part-1 footer link -->
+            <div class="col-md-4 mb-md-0 mb-3">
+                <h6 class="text-uppercase "><u>contact Us</u> </h6><br>
+                <ul class="list-unstyled text-light">
+                    <a class="lists text-light" href="#!">Location: 2/4 Circular Road, Kakrail, Dhaka</a><br>
+                    <a class="lists text-light" href="#!">Hotline: 01935692811</a><br>
+                    <a class="lists text-light" href="#!">Gmail : bashir.rasulpur@gmail.com</a><br>
+
+                </ul>
+            </div>
+            <!-- Part-2 footer link -->
+            <div class="col-md-4 mb-md-0 mb-3">
+                <h6 class="text-uppercase"><u>important links</u></h6><br>
+                <ul class="list-unstyled">
+                    <a class="lists text-light" href="#!">www.youtube/bashir/online/store.com</a><br>
+                    <a class="lists text-light" href="#!">www.facebook/bashir/online/store.com</a><br>
+                    <a class="lists text-light" href="#!">www.bashirit.com</a><br>
+                </ul>
+            </div>
+
+            <!-- Part-3 footer link -->
+            <div class="col-md-4 mb-md-0 mb-3">
+                <h6 class="text-uppercase"><u>references</u></h6><br>
+                <ul class="list-unstyled">
+                    <a class="lists text-light" href="#!">www.t-shirt.com/order/your/product</a><br>
+                    <a class="lists text-light" href="#!">www.asharalo.com</a><br>
+                    <a class="lists text-light" href="#!">www.priyority.com</a><br>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Copyright  - out of div-->
+    <div class="footer-copyright text-center py-3"><br>
+
+        <img src="assets/img/payment/payment1.png" alt="Nature" class="responsive rounded" width="102px"
+            height="102px">&nbsp;&nbsp;
+        <img src="assets/img/payment/payment2.png" alt="Nature" class="responsive rounded" width="100px"
+            height="100px">&nbsp;&nbsp;
+        <img src="assets/img/payment/payment3.png" alt="Nature" class="responsive rounded" width="100px"
+            height="60px">&nbsp;&nbsp;
+        <img src="assets/img/payment/payment4.jpg" alt="Nature" class="responsive rounded" width="100px"
+            height="60px">&nbsp;&nbsp;
+        <img src="assets/img/payment/payment4.png" alt="Nature" class="responsive rounded" width="100px"
+            height="60px">&nbsp;&nbsp;
+        <img src="assets/img/payment/payment7.png" alt="Nature" class="responsive rounded" width="100px"
+            height="60px">&nbsp;&nbsp;
+
+        <br><br> ©2021 Copyright :<a target="_blank" class="text-warning" href="https://www.bashirit.com/">
+            www.bashirit.com</a>
+    </div>
+    <!-- Copyright -->
+
+</div>
+<!-- Footer end -->
+
+
+
+
+
+<!-- //copyright -->
+<!-- js-files -->
+<script src="${pageContext.request.contextPath}/js/jquery-2.2.3.min.js"></script>
+<!-- nav smooth scroll -->
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                $(this).toggleClass('open');
+            },
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                $(this).toggleClass('open');
+            }
+        );
+    });
+</script>
+<!-- //nav smooth scroll -->
+<!-- popup modal (for location)-->
+<script src="${pageContext.request.contextPath}/js/jquery.magnific-popup.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+    });
+</script>
+<!-- //popup modal (for location)-->
+
+<!-- cart-js -->
+<script src="${pageContext.request.contextPath}/js/minicart.js"></script>
+<script>
+    paypals.minicarts.render();
+    paypals.minicarts.cart.on('checkout', function (evt) {
+        var items = this.items(),
+            len = items.length,
+            total = 0,
+            i;
+        // Count the number of each item in the cart
+        for (i = 0; i < len; i++) {
+            total += items[i].get('quantity');
+        }
+    });
+</script>
+<script src="${pageContext.request.contextPath}/js/scroll.js"></script>
+<script src="${pageContext.request.contextPath}/js/SmoothScroll.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/move-top.js"></script>
+<script src="${pageContext.request.contextPath}/js/easing.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+    });
+</script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
+
+
+
+
+<!---------------------------- Google map Script Start -------------------------->

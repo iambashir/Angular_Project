@@ -1,0 +1,10 @@
+.main-app{
+            text-rendering: optimizeLegibility;
+            /* font-size: 1.6rem; */
+            box-sizing: border-box;
+            /* line-height: 1.5; */
+            overflow-x: hidden;
+            overflow-y: hidden;
+            text-rendering: optimizeLegibility;
+            scroll-behavior: smooth; 
+}

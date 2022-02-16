@@ -1,0 +1,201 @@
+ 
+ 
+ #div-main .main-nav {
+
+            
+            background-color: #038099;
+            height: 60px;
+            padding: 2px;
+            /* align-content: center; */
+
+        }
+
+        .div1 {
+            align-items: left;
+        }
+
+        .div2 {
+            margin: 0 auto;
+            text-align: right;
+            justify-content: right;
+            /* align horizontal */
+            align-items: right;
+            /* align vertical */
+
+        }
+
+        a.onChange:hover {
+            /* margin: 0 auto; */
+            color: #f2f3f2 !important;
+            background: #118aec;
+            /* height: 60px; */
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        /* .navbar-nav li.active {
+            background: #5e8aad;
+        } */
+
+        a {
+            color: #fcf5f5 !important;
+            font: size 20px;
+            font-weight: bold;
+            
+        }
+
+        .dropdown-menu{
+            background-color: #097099;
+        }
+
+        .dropdown-item:hover{
+            background-color: #08a708;
+        }
+
+        a:focus {
+            color: #a32727 !important;
+        }
+
+        .navbar-nav li:hover>ul.dropdown-menu {
+            display: block;
+            
+            
+
+        }
+
+        .dropdown-submenu {
+            position: relative;
+            
+            
+
+        }
+
+        .dropdown-submenu>.dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+            
+        }
+
+        /* rotate caret on hover */
+        .dropdown-menu>li>a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+            transition: 0.5s;
+        }
+        
+        
+        /* ul {
+            transition: all 2s;
+            transition-duration: 2s;
+        }
+
+
+        ul.dropdown-menu {
+    
+            
+            transition-duration: 2s;
+            transition: all 2s;
+        } */
+
+
+        /* ====================== For Mobile Responsive ===================== */
+        @media only screen and (max-width: 768px) {
+            body .main-nav {
+                background-color: #cadee2;
+                height: 40px;
+                opacity: 0;
+                /* color: black; */
+                /* display: flex; */
+                justify-content: left;
+                /* align horizontal */
+                align-items: center;
+                /* align-content: center; */
+                /* align vertical */
+
+            }
+            
+            .navbautton{
+                color:#faf9f6;
+            }
+
+            a.onChange:hover {
+                color: #7e0808 !important;
+                background: #dfdad8;
+                opacity: 1;
+                transition: 0.4s;
+                /* padding: 5px; */
+                border-radius: 3px;
+                width: 160px;
+                /* height: 45px; */
+                text-align: left;
+            }
+
+            .navbar-nav li.active {
+                /* background: #5e8aad; */
+                /* padding: 5px; */
+                /* border-radius: 3px; */
+                /* width: 200px; */
+                color: #800505 !important;
+
+            }
+
+            a {
+                color: black;
+                font: size 20px;
+                font-weight: bold;
+            }
+
+            a:focus {
+                color: #8a0707 !important;
+            }
+
+            .navbar-nav li:hover>ul.dropdown-menu {
+                display: inline-block;
+
+            }
+
+            .dropdown-submenu {
+                position: relative;
+                text-align: left;
+
+            }
+
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+            }
+
+            /* rotate caret on hover */
+            .dropdown-menu>li>a:hover:after {
+                text-decoration: underline;
+                transform: rotate(-90deg);
+                transition: 0.5s;
+            }
+
+            .div1 {
+                padding: 10px;
+                
+
+            }
+
+            .div2 {
+                margin: 0 auto;
+                width: 100%;
+                text-align: left;
+                border-radius: 5px;
+                background-color: #004b6b;
+                padding: 5px;
+            }
+
+            /* .div1 {
+                margin: 0 auto;
+                width: 100%;
+                text-align: left;
+                border-radius: 5px;
+                background-color: #004b6b;
+                padding: 5px;
+            } */
+
+        }

@@ -1,0 +1,55 @@
+.div1{
+    height: 500px;
+    background-color: #0c0c0c;
+    width: 100%;
+    /* opacity: .7; */
+
+  /* background-image: url('https://www.wallpapers.net/web/wallpapers/free-download-assorted-food-hd-wallpaper-for-desktop-mobiles/3840x2160.jpg'); */
+   background-image: url('/assets/img/home2/fried-pron.jpg');
+  /* background-image: url("/src/assets/img/home2/fried-pron.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  display: block;
+
+}
+
+.div2{
+    height: 500px;
+    background-color: #e2e1e1;
+    width: 100%;
+
+}
+
+.div3{
+    height: 500px;
+    background-color: #cbe0f5;
+    width: 100%;
+
+    background-image: url('https://www.wallpapers.net/web/wallpapers/free-download-assorted-food-hd-wallpaper-for-desktop-mobiles/3840x2160.jpg');
+  /* background-image: url("/src/assets/img/home2/fried-pron.jpg"); */
+  /* background-image: url("/src/assets/img/home2/fried-pron.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  display: block;
+
+
+}
+
+
+.div4{
+    height: 500px;
+    background-color: #e2e1e1;
+    width: 100%;
+
+}
+
+.div5{
+    height: 500px;
+    background-color: #b19494;
+    width: 100%;
+
+}
+
+ 

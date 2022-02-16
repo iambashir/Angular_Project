@@ -1,9 +1,8 @@
-
-        /* .main-div {
+     .main-div {
             padding: 0;
             margin: 0;
             overflow: hidden;
-            height: 100vh;
+            height: 600px;
         }
 
         canvas {
@@ -15,21 +14,4 @@
             position: fixed;
             left: 0;
             top: 0;
-        } */
-
-/* .main-div {
-    padding:0;
-    margin:0;
-    overflow:hidden;
-	height: 600px;
-}
-canvas {
-    padding:0;
-    margin:0;
-}
-div.btnbg {
-    position:fixed;
-    left:0;
-    top:0;
-} */
-
+        }
